@@ -1,14 +1,11 @@
 package com.example;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
 
 import javafx.geometry.Point2D;
 
 public class KochSnowflake {
     private final int DIMENSION = 100;
-    private int size = 1;
     private int x = 200;
     private int y = 200;
     ArrayList<Point2D> points = new ArrayList<>();

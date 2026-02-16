@@ -1,3 +1,4 @@
+// doesnt work well for left diagonal
 package com.example;
 
 import javafx.animation.KeyFrame;
@@ -5,7 +6,6 @@ import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
@@ -32,8 +32,6 @@ public class ConnectFourGame extends Application {
                 pane.add(cells[i][j], i, j);
             }
         }
-
-        System.out.println(isWin());
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Connect Four");
@@ -158,7 +156,6 @@ public class ConnectFourGame extends Application {
                 row--;
                 col += isMajorDiagonal ? -1 : 1;
                 if (occourence == 4) {
-                    System.out.println("iss");
                     return true;
                 }
             } else {

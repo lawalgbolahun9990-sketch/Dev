@@ -107,7 +107,7 @@ public class RunningFan extends Application{
         for (int i = 0; i < numBlades; i++) {
             blades[i] = new Arc(0,0,radius,radius,angle,bladeWidth);
             blades[i].setType(ArcType.ROUND);
-            blades[i].setFill(Color.RED);
+            blades[i].setFill(Color.BURLYWOOD);
             blades[i].setStrokeWidth(2);
             blades[i].setStroke(Color.BLACK);
             angle += 90;
